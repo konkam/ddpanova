@@ -27,22 +27,18 @@ post.pred()
   \item{py}{(\code{nd} by \code{nx}) matrix of
     posterior predictive probabilities \eqn{p(y^* \mid d^*,data)},
     evaluated on the grid given in \code{ygrid}.}
-  \item{Sy}
-  {(\code{nd} by \code{nx}) matrix of
+  \item{Sy}{(\code{nd} by \code{nx}) matrix of
     estimated survival curves for the \code{nd} future units with
     design vectors specified in the rows of \code{d0}.
-    Only when called after \code{\link{ddpsurvival}}}
-  \item{sSy}
-  {(\code{nd} by \code{nx}) matrix of
+    Only when called after \code{\link{ddpsurvival}}.}
+  \item{sSy}{(\code{nd} by \code{nx}) matrix of
     pointwise posterior predictive s.d.'s for the survival curve.
-    Only when called after \code{\link{ddpsurvival}}}
-  \item{hy}
-  {(\code{nd} by \code{nx}) matrix of
+    Only when called after \code{\link{ddpsurvival}}.}
+  \item{hy}{(\code{nd} by \code{nx}) matrix of
     posterior predictive hazards for future units with design
     vectors specified in \code{d0}.
-    Only when called after \code{\link{ddpsurvival}}}
-  \item{shy}
-  {(\code{nd} by \code{nx}) matrix of pointwise s.d.'s of
+    Only when called after \code{\link{ddpsurvival}}.}
+  \item{shy}{(\code{nd} by \code{nx}) matrix of pointwise s.d.'s of
     the hazard curves.}
   \item{censoring}{indicator whether call was following
     \code{\link{ddpsurvival}} (\code{censoring=1}) or
