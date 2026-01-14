@@ -47,3 +47,50 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# --- additional ignores recommended for R packages/project ---
+
+# OS files
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editor swap/backup files
+*~
+.*.swp
+*.swp
+*.swo
+.#*
+
+# Build / log files
+*.log
+*.Rout
+*.Rout.save
+
+# Compiled objects & libraries (src and build products)
+*.o
+*.so
+*.dll
+*.dylib
+*.dSYM
+src/*.o
+src/*.so
+src/*.dll
+src/*.dylib
+
+# RenV / packrat libraries (lockfiles should be tracked)
+renv/library/
+renv/staging/
+renv/cache/
+packrat/lib/
+packrat/cache/
+
+# Python/virtualenv artifacts (if present)
+venv/
+.env
+.envrc
+
+# Misc
+*.pem
+*.key
