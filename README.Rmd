@@ -20,6 +20,8 @@ knitr::opts_chunk$set(
 
 A fork from the ddpanova R package, which currently cannot be installed. The link to the original package is: https://web.ma.utexas.edu/users/pmueller/prog.html#anovaddp
 
+The only changes made were to fix some compilation issues in the C source code.
+
 ## Installation
 
 You may install ddpanova using the github installer provided in the package `devtools` via:
