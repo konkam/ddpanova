@@ -1,0 +1,14 @@
+Package: ddpanova
+Type: Package
+Title: ANOVA DDP model for univariate response
+Version: 1.0
+Date: 2007-04-23
+Author: Peter Mueller
+Maintainer: Peter Mueller <pm@wotan.mdacc.tmc.edu>
+Description: 
+  The package implements posterior MCMC for the
+  ANOVA DDP model with univariate response.
+  The model is specified with a design matrix.
+License: GNU
+NeedsCompilation: yes
+Packaged: 2017-01-07 20:33:20 UTC; pmueller

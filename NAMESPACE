@@ -1,0 +1,7 @@
+useDynLib(ddpanova)
+
+export(ddpanova,
+       ddpsurvival,
+	post.sim,
+	post.pred)
+
