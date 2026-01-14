@@ -30,7 +30,7 @@ static const char interface_c_sccs_id[] = "%W%";
 #include "nrutil.h"
 #include "interface.h"
 
-FILE	*ifile, *fopen(), *ofile;
+FILE	*ifile, *ofile;
 
 /* -------------------------------------------------
    swap

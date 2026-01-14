@@ -192,10 +192,10 @@ long l_poisson(double mu)
 double d_normal_dens(double y, double m, double s) 
      /* returns log pdf of normal y ~ Normal(mu,s^2) */ 
 {	 
-  double log(); 
- 
+  /* log() from <math.h> */ 
+
   return(-0.5*log(2.0*M_PI) - log(1.0*s) -  
-	 (y-m)*(y-m)/(2.0*s*s)); 
+	 (y-m)*(y-m)/(2.0*s*s));
 } 
 double pdfnorm(double y, double m, double s) 
 { 
@@ -210,9 +210,9 @@ double	d_lognormal_dens(y,m,s)
    x ~ Normal(mu,s^2) */ 
 double y, m, s; 
 {	 
-  double x, f, log(), d_normal_dens(); 
- 
-  if (y > 0){ 
+  double x, f; 
+
+  if (y > 0){
     x = log(y); 
     f = d_normal_dens(x,m,s) - x; 
   } 
@@ -439,7 +439,6 @@ double tc_logpdf(double sd, int nu)
  
 double betadev(double alpha, double beta) 
 { 
-      double gamdev(); 
       double x, y; 
        
       x = gamdev(alpha);               /* X ~ gamma(alpha) */ 

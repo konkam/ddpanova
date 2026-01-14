@@ -1,4 +1,5 @@
 #include "math.h"
+#include "nrutil.h"
 
 /* ***********************************************************
    unifrom
@@ -22,7 +23,6 @@ double ran1(int *idum)
 	double temp;
 	static int iff=0;
 	int j;
-	void nrerror();
 
 	if (*idum < 0 || iff == 0) {
 		iff=1;
@@ -42,7 +42,7 @@ double ran1(int *idum)
 	ix2=(IA2*ix2+IC2) % M2;
 	ix3=(IA3*ix3+IC3) % M3;
 	j=1 + ((97*ix3)/M3);
-	if (j > 97 || j < 1) nrerror("RAN1: This cannot happen.");
+	if (j > 97 || j < 1) nrerror("ran1","unexpected state","RAN1: This cannot happen.");
 	temp=r[j];
 	r[j]=(ix1+ix2*RM2)*RM1;
 	return temp;
@@ -69,7 +69,6 @@ double gasdev(int *idum)
 	static int iset=0;
 	static double gset;
 	double fac,r,v1,v2;
-	double ran1();
 
 	if  (iset == 0) {
 		do {

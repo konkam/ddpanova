@@ -27,9 +27,9 @@ int nvn(){return(nv);}
  
 void nrerror(char *proc, char *act, char *what) 
 { 
-  void exit(); 
- 
-  fprintf(stderr, "\n ** Error "); 
+  /* exit() declared in <stdlib.h> */ 
+
+  fprintf(stderr, "\n ** Error ");
   if (proc[0]!='\0') /* not empty */ 
     fprintf(stderr, " in function '%s', ", proc); 
   if (act[0]!='\0') /* not empty */ 
