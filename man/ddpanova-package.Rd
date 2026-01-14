@@ -67,7 +67,7 @@ DDP ANOVA with univariate response
     \begin{eqnarray*}
     y_i & \sim & \int N(y_i;\; d_i^\prime\mu, V)\; dG(\mu,V),\\
     G   & \sim & DP(\alpha,G_0),
-    G_0(\mu,V)  = Ga(1/V; s/2, sS/2) N(\mu; m,B)\\
+    G_0(\mu,V) & = & Ga(1/V; s/2, sS/2) N(\mu; m,B)\\
     S          & \sim & Ga(q,q/R),  E(S)=R\\
     m          & \sim & N(a,A)\\
     B^{-1}     & \sim & Wish(c,(cC)^{-1}),  E(B^{-1})=C^{-1}\\

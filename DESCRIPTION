@@ -12,3 +12,4 @@ Description:
 License: GNU
 NeedsCompilation: yes
 Packaged: 2017-01-07 20:33:20 UTC; pmueller
+RoxygenNote: 7.3.3

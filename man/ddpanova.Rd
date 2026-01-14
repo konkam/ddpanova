@@ -44,19 +44,18 @@ ddpanova(Y = NULL, D = NULL,
     base measure for precision (1/variance)}
   \item{S.init}{initial value for \code{S}}
   \item{q}{d.f. and scale in Gamma(\code{q},\code{q/R}) prior for \code{S}}
-  \item{R}{}
+  \item{R}{(optional) prior scale parameter/other usage (see Details).}
   \item{m.init}{mean and variance in N(\code{m},\code{B}) base measure
     for location parameter}
-  \item{B.init}{}
-  \item{cc}{d.f. and matrix paramter in
-    Wishart(\code{cc},\code{1/cc}\code{CC}$^{-1}) prior for \code{B}$^{-1}}
-  \item{CC}{}
+  \item{B.init}{initial value for \code{B}}
+  \item{cc}{degrees of freedom and matrix parameter for a \code{Wishart(cc, (1/cc) CC^{-1})} prior for \code{B^{-1}}.}
+  \item{CC}{initial matrix for \code{CC}}
   \item{a}{mean and covariance matrix in N(\code{a},\code{A}) prior for
     \code{m}}
-  \item{A}{}
+  \item{A}{initial matrix for \code{A}}
   \item{alpha}{initial value for the total mass parameter}
   \item{a0}{shape and scale of Gamma prior for \code{alpha}}
-  \item{b0}{}
+  \item{b0}{(optional) prior hyperparameter for \code{alpha}}
   \item{k0}{number of initial clusters}
   \item{member0}{(\code{n} by 1) vector of cluster membership
     indicators (only necessary if \code{k0} is not 1 or \code{n})}
